@@ -1,0 +1,5 @@
+!service-definition-v1
+name: ACK
+description: ACK
+requests:
+- 'BYDM:applicationReceiptAcknowledgement:BYDM 2020.3.0'

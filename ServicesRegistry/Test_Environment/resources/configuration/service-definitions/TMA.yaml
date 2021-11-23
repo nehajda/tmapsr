@@ -1,0 +1,31 @@
+!adapter-service-definition-v1
+name: TMA
+description: TMA adapter for TMS
+inbound:
+  requests:
+  - message: 'BYDM:party:BYDM 2021.10.0'
+    flow: 'flow-in-partyMessage-bydm'
+  - message: 'BYDM:location:BYDM 2021.10.0'
+    flow: 'flow-in-locationMessage-bydm'
+  - message: 'BYDM:transportInstruction:BYDM 2021.9.0'
+    flow: 'flow-in-transportInstruction-bydm'
+  - message: 'BYDM:transferOrder:BYDM 2021.10.0'
+    flow: 'flow-in-transferOrder-bydm'
+  - message: 'BYDM:orderRelease:BYDM 2021.10.0'
+    flow: 'flow-in-CustomerOrder-bydm'
+  - message: 'BYDM:item:BYDM 2021.9.0'
+    flow: 'flow-in-itemMessage-bydm'
+  - message: 'BYDM:warehousingOutboundNotification:BYDM 2021.9.0'
+    flow: 'flow-in-warehousingOutboundNotificationMessage-bydm'
+  - message: 'BYDM:despatchAdvice:BYDM 2021.9.0'
+    flow: 'flow-in-despatchAdviceMessage-bydm'
+  - message: 'BYDM:transportPickUpDropOffConfirmation:BYDM 2021.9.0'
+    flow: 'flow-in-transportPickUpDropOffConfirmationMessage-bydm'
+  - message: 'BYDM:receivingAdvice:BYDM 2021.9.0'
+    flow: 'flow-in-receivingAdviceMessage-bydm'
+  - message: 'BYDM:warehousingOutboundInstruction:BYDM 2021.9.0'
+    flow: 'flow-in-warehousingOutboundInstructionMessage-bydm'
+outbound:
+  responses:
+  - message: 'BYDM:transportLoad:BYDM 2021.9.0'
+    flow: 'flow-transportLoadMessage-bydm'
